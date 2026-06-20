@@ -136,6 +136,7 @@ even though it didn't work on my friend's computer. The most important differenc
 - I implement the key derivation and sealing logic, which is crucial for security.
 - Our flow don't send vendor `GET_STATE`(0x50) during open. We gets sensor metadata and 
   dimensions from INIT_RESULT.
+- An explicit delay is inserted into SET_TLS_KEY and TLS_INIT, which is necessary on certain devices.
 
 ## Disclaimer
 
